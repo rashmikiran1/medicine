@@ -1,0 +1,46 @@
+
+  
+  .modal {
+    position: fixed;
+    top: 20px;
+    right: 0;
+    width: 300px;
+    background-color:whitesmoke;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    animation: slide-down 300ms ease-out forwards;
+    border: 10px;
+    border-color: brown;
+  }
+
+  .style {
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+    font-weight: bolder;
+    gap: 60px;
+    padding: 10px;
+  }
+  .title {
+    text-align: center;
+  }
+  .closeButton {
+    position: absolute;
+    top: 30px; 
+    right: 10px; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    color: #770d0d; 
+  }
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
